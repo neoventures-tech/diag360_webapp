@@ -35,7 +35,7 @@ axios.interceptors.response.use(
                 originalRequest._retry = true;
                 try {
                     // Chama o endpoint de renovação de token
-                    await axios.post('auth/token/refresh/')
+                    await axios.post('auth/refresh')
 
 
                     return axios(originalRequest);
